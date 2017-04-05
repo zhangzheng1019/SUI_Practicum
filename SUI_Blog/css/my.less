@@ -1,0 +1,204 @@
+@fl-l: left;
+@fl-r: right;
+@userW: 10rem;
+@userscoreH: 0.5rem;
+@userThumbWH: 4rem;
+@bgco: #f64242;
+.fl-l{
+	float: @fl-l;
+}
+.fl-r{
+	float: @fl-r;
+}
+.clearfloat{
+	zoom: 1;
+}
+.clearfloat:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.userInfo{
+	width: @userW;
+	margin: 2rem auto 0 auto;
+}
+.userInfo-thumb{
+	width: @userThumbWH;
+	height: @userThumbWH;
+	border-radius: 50%;
+}
+.userInfo-score{
+	height: @userscoreH;
+	line-height: @userscoreH;
+	color: #f00;
+	font-size: 0.5rem;
+}
+
+@cardWH: 2rem;
+.siderbar-list-group{
+	margin-top: 2rem;
+	ul{
+		background-color: #111;
+		list-style: none;
+		display: inline;
+	}
+	a{
+		height: @cardWH;
+		line-height: @cardWH;
+		border-bottom: 1px solid rgba(51, 51, 51, 0.74);;
+		padding-left: 1rem;
+		display: block;
+		color: #999;
+		font-size: 0.7rem;
+		&:hover{
+			background-color: @bgco;
+			color: #fff;
+		}
+	}
+}
+.infinite-scroll-preloader {
+	margin-top:-1rem;
+}
+.button-my{
+	font-size: 0.7rem;
+}
+.lists-li{
+	border-bottom: 1px solid #ddd;
+	padding: 1rem;
+}
+
+.article-title{
+	margin:0.5rem 0;
+	width: 13rem;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.article-from{
+	font-size: 0.5rem;
+	color:#999;
+	margin-top: 0;
+	a{
+		color:#393939;
+		cursor:pointer;
+	}
+}
+.article-autorInfo{
+	height: 1rem;
+	display:block;
+}
+.article-autorImg{
+	width:1rem;
+	height: 1rem;
+	border-radius:50%;
+}
+.article-autorName{
+	color: #000;
+	font-size: 0.7rem;
+	display:inline;
+}
+.article-share,.article-time{
+	color: #ccc;
+	font-size: 0.5rem;
+}
+.icon-like{
+	width: 1rem;
+	height: 1rem;
+	background: url("../img/like.png");
+}
+.icon-comment{
+	width: 1rem;
+	height: 1rem;
+	background: url("../img/comment.png");
+}
+.like-num,.comment-num{
+	font-size: 0.5rem;
+}
+// my.html
+.bg-fff{
+	background-color: #fff;
+}
+.my-autorImg{
+	width:3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+.my-autorName{
+	position: relative;
+	top: -1.5rem;
+	left: 0.7rem;
+}
+.my-autorScoreAll{
+	position: relative;
+	top: 0;
+	left: -1.1rem;
+}
+.my-autorName,.my-autorScoreAll{
+	display: inline;
+}
+.my-autorScore{
+	color:orange;
+}
+.item-title{
+	font-size: 0.7rem;
+}
+.item-after{
+	font-size: 0.5rem;
+	color: #cdcdcd;
+}
+.icon-menumy{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/menumy.png");
+}
+.icon-blog{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/blog.png");
+}
+.icon-ques{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/ques.png");
+}
+.icon-luntan{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/comment.png");
+}
+.icon-history{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/history.png");
+}
+.icon-down2{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/down.png");
+}
+.icon-like2{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/like2.png");
+}
+.icon-setting{
+	width: 1rem;
+	height: 1rem;
+	background:url("../img/setting.png");
+}
+//LUNTAN
+.LT-title{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.LT-title,.LT-content{
+	color: #000;
+}
+.LT-img{
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+}
